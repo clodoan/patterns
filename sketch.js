@@ -1,4 +1,4 @@
-var spacing = 40;
+var spacing = 20;
 let x = 0;
 let y = 0;
 
@@ -8,7 +8,7 @@ function setup() {
 };
 
 function draw() {
-    stroke(255);
+    stroke('#FF5050');
 
     if (random() > 0.5) {
         line(x, y, x + spacing, y + spacing);
@@ -25,5 +25,4 @@ function draw() {
         x = 0;
         y += spacing;
     }        
-
 }
